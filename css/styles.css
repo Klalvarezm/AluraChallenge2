@@ -1,0 +1,132 @@
+/*Espacio configuraciones generales*/
+
+
+.toNewGame, .saveWordButton{
+    background: #0A3871;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-color: #0A3871;
+}
+
+.toNewWord, .fromSWtoMM{
+    background: #f3f3fb;
+    color:#0A3871;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-color: #0A3871;
+}
+
+.logoImg{
+    height: 5%;
+    width: 5%;
+}
+
+.addwordspace{
+    font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+color: #0A3871;
+background-color:#f3f3fb;
+border: none;
+outline: none;
+resize: none;
+}
+
+body{
+background:#f3f3fb;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+color: #0A3871;
+}
+
+
+
+/*Espacio configuraciones PC GRANDE*/
+@media only screen and (min-width: 1200px)  {
+    .toNewGame{
+        width: 25%;
+        height: 67px;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+        position: absolute;
+        top:60%;
+        left:20%;
+    }
+    h1{
+        position: absolute;
+        top:35%;
+        left:30%;
+        font-size: 45px;
+    }
+    
+    h2{
+        position: absolute;
+        top:45%;
+        left:34%;
+        font-size: 30px;
+        line-height: 150%;
+    }
+
+    .addtitle{
+        left:5%;
+        top:10%;
+    }
+    .addsubtitle{
+        left:8%;
+        top:20%;
+    }
+
+    .addwordspace{
+        position: absolute;
+        font-size: 250%;
+        left:15%;
+        top:35%;
+    }
+
+
+    .toNewWord{
+        width: 25%;
+        height: 67px;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+        position: absolute;
+        top:60%;
+        left:50%;
+    }
+
+    .saveWordButton{
+        width: 25%;
+        height: 67px;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+        position: absolute;
+        top:50%;
+        left:15%;
+    }
+
+    .fromSWtoMM{
+        width: 38%;
+        height: 67px;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+        position: absolute;
+        top:50%;
+        left:45%;
+    }
+}
+
+/*Espacio configuraciones PC PEQUEÑO-TABLET*/
+
+
+/*Espacio configuraciones Celular*/
