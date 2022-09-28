@@ -417,7 +417,7 @@ color: #0A3871;
      
     h1{
         position: absolute;
-        top:20%;
+        top:10%;
         left:2%;
         font-size: 150%;
         text-align: center;
@@ -429,7 +429,7 @@ color: #0A3871;
         top:30%;
         left:2%;
         width: fit-content;
-        font-size: 150%;
+        font-size: 120%;
         line-height: 120%;
         text-align: center;
     }
@@ -440,7 +440,7 @@ color: #0A3871;
         border-radius: 5%;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 150%;
+        font-size: 100%;
         position: absolute;
         top:50%;
         left:25%;
@@ -452,7 +452,7 @@ color: #0A3871;
         border-radius: 5%;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 150%;
+        font-size: 120%;
         position: absolute;
         top:63%;
         left:25%;
@@ -461,18 +461,18 @@ color: #0A3871;
     .addtitle{
         left:5%;
         top:10%;
-        font-size: 180%;
+        font-size: 50%;
     }
     .addsubtitle{
         left:5%;
         top:20%;
-        font-size: 150%;
+        font-size: 100%;
         text-align: left;
     }
     
     .addwordspace{
         position: absolute;
-        font-size: 120%;
+        font-size: 80%;
         left:5%;
         top:40%;
     }
@@ -483,7 +483,7 @@ color: #0A3871;
         border-radius: 5%;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 150%;
+        font-size: 100%;
         position: absolute;
         top:50%;
         left:15%;
@@ -495,7 +495,7 @@ color: #0A3871;
         border-radius: 5%;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 150%;
+        font-size: 90%;
         position: absolute;
         top:65%;
         left:15%;
