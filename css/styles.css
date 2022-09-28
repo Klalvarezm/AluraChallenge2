@@ -53,7 +53,7 @@ color: #0A3871;
 }
 
 /*Espacio configuraciones PC GRANDE*/
-@media only screen and (min-width: 1100px)  {
+@media only screen and (min-width: 1300px)  {
     .toNewGame{
         width: 25%;
         height: 15%;
@@ -86,26 +86,26 @@ color: #0A3871;
     
     .returnToMainMenu{
         position: absolute;
-        top:75%;
-        left: 18%;
-        width: 25%;
-        height: 15%;
-        border-radius: 24px;
+        top:62%;
+        left: 8%;
+        width: 45%;
+        height: 5%;
+        border-radius: 5%;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 200%;
+        font-size: 150%;
     }
     
     .restartGame{
         position: absolute;
-        top:62%;
+        top:55%;
         left:18%;
         width: 25%;
-        height: 10%;
+        height: 5%;
         border-radius: 24px;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 200%;
+        font-size: 150%;
     }
 
     .canvasSpace{
@@ -194,7 +194,7 @@ color: #0A3871;
 
 /*Espacio configuraciones PC PEQUEÑO-TABLET*/
 
-@media only screen and (max-width: 1099px){
+@media only screen and (max-width: 1299px){
     
     .titleGame{
         top:5%;
@@ -241,6 +241,18 @@ color: #0A3871;
         left:18%;
         width: 60%;
         height: 5%;
+        border-radius: 5%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 150%;
+    }
+
+    .returnToMainMenu{
+        position: absolute;
+        top:42%;
+        left: 18%;
+        width: 60%;
+        height: 10%;
         border-radius: 5%;
         padding: 5%,30%;
         display: inline-block;
@@ -332,5 +344,7 @@ color: #0A3871;
         top:65%;
         left:15%;
     }
+
+    
 }
 /*Espacio configuraciones Celular*/
