@@ -15,8 +15,12 @@
     </header>
     <body onload="loadWord()">
          <h1 class="titleGame">Adivina la palabra para ganar</h1>
-         <canvas class="canvasSpace" id="myCanvas" width="650" height="400"></canvas>
-         
+         <canvas class="canvasSpace" id="myCanvas" width="650" height="400">
+
+        
+         </canvas>
+         <button class="restartGame" id="GameRestart" onclick="restartGame()">Jugar de Nuevo</button>
+        <button class="returnToMainMenu" id="toMainMenu" onclick="location.href='index.html'">Regresa al Menu Principal</button>
         <table class="alphaButtonContainer">
             <tr>
             <td><button onclick="checkWord('a')" class="alphaButton">A</button></td>
@@ -58,8 +62,7 @@
             </tr>
             
         </table>
-        <button class="restartGame" id="GameRestart" onclick="restartGame()">Jugar de Nuevo</button>
-        <button class="returnToMainMenu" id="toMainMenu" onclick="location.href='index.html'">Regresa al Menu Principal</button>
+        
           
     </body>
 </html>
