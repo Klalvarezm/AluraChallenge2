@@ -8,12 +8,60 @@
         <link rel="icon" href="./img/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/styles.css">
         <script src="./js/script.js"></script>
+        
     </head>
     <header>
         <img class="logoImg" src="./img/logo.png" alt="logo alura">
     </header>
-    <body>
-         <h1>Espacio Juego</h1>
-         
+    <body onload="loadWord()">
+         <h1 class="titleGame">Espacio Juego</h1>
+         <canvas class="canvasSpace" id="myCanvas" ></canvas>
+         <script src="./js/graficos.js"></script>
+        <table class="alphaButtonContainer">
+            <tr>
+            <td><button onclick="checkWord('a')" class="alphaButton">a</button></td>
+            <td><button onclick="checkWord('b')" class="alphaButton">b</button></td>
+            <td><button onclick="checkWord('c')" class="alphaButton">c</button></td>
+            <td><button onclick="checkWord('d')" class="alphaButton">d</button></td>
+            <td><button onclick="checkWord('e')" class="alphaButton">e</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="checkWord('f')" class="alphaButton">f</button></td>
+                <td><button onclick="checkWord('g')" class="alphaButton">g</button></td>
+                <td><button onclick="checkWord('h')" class="alphaButton">h</button></td>
+                <td><button onclick="checkWord('i')" class="alphaButton">i</button></td>
+                <td><button onclick="checkWord('j')" class="alphaButton">j</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="checkWord('k')" class="alphaButton">k</button></td>
+                <td><button onclick="checkWord('l')" class="alphaButton">l</button></td>
+                <td><button onclick="checkWord('m')" class="alphaButton">m</button></td>
+                <td><button onclick="checkWord('n')" class="alphaButton">n</button></td>
+                <td><button onclick="checkWord('o')" class="alphaButton">o</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="checkWord('p')" class="alphaButton">p</button></td>
+                <td><button onclick="checkWord('q')" class="alphaButton">q</button></td>
+                <td><button onclick="checkWord('r')" class="alphaButton">r</button></td>
+                <td><button onclick="checkWord('s')" class="alphaButton">s</button></td>
+                <td><button onclick="checkWord('t')" class="alphaButton">t</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="checkWord('u')" class="alphaButton">u</button></td>
+                <td><button onclick="checkWord('v')" class="alphaButton">v</button></td>
+                <td><button onclick="checkWord('w')" class="alphaButton">w</button></td>
+                <td><button onclick="checkWord('x')" class="alphaButton">x</button></td>
+                <td><button onclick="checkWord('y')" class="alphaButton">y</button></td>
+                </tr>
+            <tr >
+                <td class="zContainer"><button onclick="checkWord('z')" class="alphaButton">z</button></td>
+            </tr>
+            
+        </table>
+          
+          
+          
+          
+          
     </body>
 </html>

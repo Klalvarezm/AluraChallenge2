@@ -1,7 +1,7 @@
 /*Espacio configuraciones generales*/
 
 
-.toNewGame, .saveWordButton{
+.toNewGame, .saveWordButton,.alphaButton{
     background: #0A3871;
     color: white;
     text-align: center;
@@ -42,7 +42,11 @@ font-weight: 400;
 color: #0A3871;
 }
 
-
+.canvasSpace{
+    border:5px solid #0A3871 ;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
 
 /*Espacio configuraciones PC GRANDE*/
 @media only screen and (min-width: 1200px)  {
@@ -70,6 +74,17 @@ color: #0A3871;
         left:34%;
         font-size: 30px;
         line-height: 150%;
+    }
+    .titleGame{
+        top:5%;
+        left:38%;
+    }
+
+    .canvasSpace{
+        position: absolute;
+        top:25%;
+        left:5%;
+        width: 50%;
     }
 
     .addtitle{
@@ -123,6 +138,27 @@ color: #0A3871;
         position: absolute;
         top:50%;
         left:45%;
+    }
+
+    .alphaButtonContainer{
+        position: absolute;
+        top: 28%;
+        left: 70%;
+    }
+
+    .alphaButton{
+        width: 60px;
+        height: 67px;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 250%;
+    }
+
+    .zContainer{
+        position: absolute;
+        top:100%;
+        left:41%;
     }
 }
 
