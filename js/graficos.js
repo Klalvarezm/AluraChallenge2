@@ -131,8 +131,9 @@ function checkWord(letter){
 
         if(lives==0){
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillText('☠️', (canvas.width*0.45), canvas.height*0.2)
-            ctx.fillText('🚨 JUEGO TERMINADO 🚨', (canvas.width*0.02), canvas.height*0.4)
+            ctx.fillText('☠️', (canvas.width*0.45), canvas.height*0.2);
+            ctx.fillText('🚨 JUEGO TERMINADO 🚨', (canvas.width*0.02), canvas.height*0.4);
+            alert("La palabra era: "+palabraSeleccionada +"\nIntenta Nuevamente!");
             restartButton.style.display = 'inline-block';
             mainMenuButton.style.display = 'inline-block';
         }
