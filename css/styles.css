@@ -1,7 +1,11 @@
 /*Espacio configuraciones generales*/
+@font-face{font-family: Hacker; src: url('../Hacker Regular.ttf');}
 
+*{
+    font-family: Hacker;
+}
 
-.toNewGame, .saveWordButton,.alphaButton{
+.toNewGame, .saveWordButton,.alphaButton,.restartGame{
     background: #0A3871;
     color: white;
     text-align: center;
@@ -9,7 +13,7 @@
     border-color: #0A3871;
 }
 
-.toNewWord, .fromSWtoMM{
+.toNewWord, .fromSWtoMM,.returnToMainMenu{
     background: #f3f3fb;
     color:#0A3871;
     text-align: center;
@@ -24,7 +28,7 @@
 }
 
 .addwordspace{
-    font-family: 'Verdana';
+font-family: 'Hacker';
 font-style: normal;
 font-weight: 400;
 color: #0A3871;
@@ -36,7 +40,7 @@ resize: none;
 
 body{
 background:#f3f3fb;
-font-family: 'Verdana';
+font-family: 'Hacker';
 font-style: normal;
 font-weight: 400;
 color: #0A3871;
@@ -49,35 +53,59 @@ color: #0A3871;
 }
 
 /*Espacio configuraciones PC GRANDE*/
-@media only screen and (min-width: 1200px)  {
+@media only screen and (min-width: 1100px)  {
     .toNewGame{
         width: 25%;
-        height: 67px;
+        height: 15%;
         border-radius: 24px;
         padding: 5%,30%;
         display: inline-block;
         font-size: 200%;
         position: absolute;
-        top:60%;
+        top:48%;
         left:20%;
     }
     h1{
         position: absolute;
-        top:35%;
-        left:30%;
+        top:20%;
+        left:10%;
         font-size: 45px;
     }
     
     h2{
         position: absolute;
-        top:45%;
-        left:34%;
+        top:35%;
+        left:15%;
         font-size: 30px;
         line-height: 150%;
     }
     .titleGame{
-        top:5%;
-        left:38%;
+        top:10%;
+        left:5%;
+    }
+    
+    .returnToMainMenu{
+        position: absolute;
+        top:75%;
+        left: 18%;
+        width: 25%;
+        height: 15%;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+    }
+    
+    .restartGame{
+        position: absolute;
+        top:62%;
+        left:18%;
+        width: 25%;
+        height: 10%;
+        border-radius: 24px;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
     }
 
     .canvasSpace{
@@ -90,15 +118,17 @@ color: #0A3871;
     .addtitle{
         left:5%;
         top:10%;
+        font-size: 200%;
     }
     .addsubtitle{
-        left:8%;
-        top:20%;
+        left:5%;
+        top:15%;
+        font-size: 180%;
     }
 
     .addwordspace{
         position: absolute;
-        font-size: 250%;
+        font-size: 240%;
         left:15%;
         top:35%;
     }
@@ -106,19 +136,19 @@ color: #0A3871;
 
     .toNewWord{
         width: 25%;
-        height: 67px;
+        height: 15%;
         border-radius: 24px;
         padding: 5%,30%;
         display: inline-block;
         font-size: 200%;
         position: absolute;
-        top:60%;
+        top:48%;
         left:50%;
     }
 
     .saveWordButton{
         width: 25%;
-        height: 67px;
+        height: 15%;
         border-radius: 24px;
         padding: 5%,30%;
         display: inline-block;
@@ -130,7 +160,7 @@ color: #0A3871;
 
     .fromSWtoMM{
         width: 38%;
-        height: 67px;
+        height: 15%;
         border-radius: 24px;
         padding: 5%,30%;
         display: inline-block;
@@ -142,17 +172,17 @@ color: #0A3871;
 
     .alphaButtonContainer{
         position: absolute;
-        top: 28%;
-        left: 70%;
+        top: 25%;
+        left: 60%;
     }
 
     .alphaButton{
-        width: 60px;
-        height: 67px;
-        border-radius: 24px;
+        width: 100%;
+        height: 50%;
+        border-radius: 8%;
         padding: 5%,30%;
         display: inline-block;
-        font-size: 250%;
+        font-size: 500%;
     }
 
     .zContainer{
@@ -164,5 +194,143 @@ color: #0A3871;
 
 /*Espacio configuraciones PC PEQUEÑO-TABLET*/
 
+@media only screen and (max-width: 1099px){
+    
+    .titleGame{
+        top:5%;
+        left:5%;
+        font-size: 180%;
+    }
 
+    .canvasSpace{
+        position: absolute;
+        top:15%;
+        left:5%;
+        width: 80%;
+        height: 40%;
+    }
+   
+    .alphaButtonContainer{
+        position: absolute;
+        top: 58%;
+        left: 5%;
+        width: 80%;
+    }
+
+    .alphaButton{
+        width: 100%;
+        height: 50%;
+        border-radius: 8%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 235%;
+    }
+
+    .zContainer{
+        width: 20%;
+        height: 38%;
+        border-radius: 8%;
+        position: absolute;
+        top:100%;
+        left:40%;
+    }
+    
+    .restartGame{
+        position: absolute;
+        top:35%;
+        left:18%;
+        width: 60%;
+        height: 5%;
+        border-radius: 5%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 150%;
+    }
+     
+    h1{
+        position: absolute;
+        top:20%;
+        left:2%;
+        font-size: 250%;
+        text-align: center;
+
+    }
+    
+    h2{
+        position: absolute;
+        top:33%;
+        left:2%;
+        width: fit-content;
+        font-size: 200%;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .toNewGame{
+        width: 50%;
+        height: 10%;
+        border-radius: 5%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+        position: absolute;
+        top:50%;
+        left:25%;
+    }
+
+    .toNewWord{
+        width: 50%;
+        height: 10%;
+        border-radius: 5%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 200%;
+        position: absolute;
+        top:63%;
+        left:25%;
+    }
+
+    .addtitle{
+        left:5%;
+        top:10%;
+        font-size: 180%;
+    }
+    .addsubtitle{
+        left:5%;
+        top:20%;
+        font-size: 150%;
+        text-align: left;
+    }
+    
+    .addwordspace{
+        position: absolute;
+        font-size: 120%;
+        left:5%;
+        top:40%;
+    }
+
+    .saveWordButton{
+        width: 50%;
+        height: 10%;
+        border-radius: 5%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 150%;
+        position: absolute;
+        top:50%;
+        left:15%;
+    }
+
+    .fromSWtoMM{
+        width: 62%;
+        height: 10%;
+        border-radius: 5%;
+        padding: 5%,30%;
+        display: inline-block;
+        font-size: 150%;
+        position: absolute;
+        top:65%;
+        left:15%;
+    }
+}
 /*Espacio configuraciones Celular*/

@@ -10,6 +10,9 @@ function saveWord(){
     let textToSave=document.getElementById("wordToSave").value;
     listaPalabras.push(textToSave);
     localStorage.setItem('palabras',JSON.stringify(listaPalabras));
+    alert("Tu palabra se ha agregado correctamente");
+    location.reload();
+    return false;
 }
 
 var chosenWord="";
