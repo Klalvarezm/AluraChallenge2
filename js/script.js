@@ -11,6 +11,7 @@ function saveWord(){
     listaPalabras.push(textToSave);
     localStorage.setItem('palabras',JSON.stringify(listaPalabras));
     alert("Tu palabra se ha agregado correctamente");
+    document.getElementById("wordToSave").value="";
     location.reload();
     return false;
 }
